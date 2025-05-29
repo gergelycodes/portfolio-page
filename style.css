@@ -1,3 +1,7 @@
+/* Body */
+body{
+    height: 300vh;
+}
 .gradient-background {
     background: linear-gradient(300deg, #fff, #a6a6a6, #fff);
     background-size: 180% 180%;
@@ -25,31 +29,75 @@
 
 h1{
     font-family: 'Major Mono Display', 'Caveat';
+    text-align: center;
 }
 
-h2{
+h3{
     font-family: 'Ubuntu Mono';
-    font-weight: lighter;
+}
+
+.title > p{
+    text-align: center;
 }
 
 
 /* Navigation Bar */
-.nav{
-    margin-top: 20px;
+.navbar {
+    background-color: transparent;
 }
-.nav > .nav-item{
-    --bs-nav-link-padding-x: 1rem;
+.nav-item{
+    font-family: 'Ubuntu Mono';
+    text-transform: uppercase;
+    font-size: 1.3rem;
+
+}
+
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
     --bs-nav-link-padding-y: 0.5rem;
     --bs-nav-link-font-weight: ;
-    --bs-nav-link-color: #000;
-    --bs-nav-link-hover-color: #fff;
-    --bs-nav-link-disabled-color: var(--bs-secondary-color);
-    display: flex;
-    flex-wrap: wrap;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex
+;
+    flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    font-family: 'Ubuntu Mono';
-    font-size: 1.5rem;
-    text-transform: uppercase;
 }
+
+/* Project Card */
+.project-card{
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    border: #a6a6a6;
+    border-radius: 10px;
+    box-shadow: #000;
+}
+
+/* Body Flexbox on Projects */
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Contact details */
+.message {
+    height: 300px;
+}
+
+.contact-details{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    max-width: 500px;
+    min-height: 30px;
+    
+    border: 2px solid black;
+}
+
